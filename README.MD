@@ -1,22 +1,16 @@
-# ng2-image-preview
+# ng-image-preview
+![Demo ng-image-preview](./image-preview-peak.gif.png)
+Thanks by service used for tests on https://randomuser.me/
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install ng2-image-preview --save
+$ npm install @pluritech/ng-image-preview --save
 ```
 
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ng2-image-preview
-```
-
-and then from your Angular `AppModule`:
+## Using the ng-image-preview
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,8 +18,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'ng2-image-preview';
+// Import the library
+import { NgImagePreviewModule } from '@pluritech/ng-image-preview';
 
 @NgModule({
   declarations: [
@@ -34,8 +28,8 @@ import { SampleModule } from 'ng2-image-preview';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Specify the library as an import
+    NgImagePreviewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,30 +37,21 @@ import { SampleModule } from 'ng2-image-preview';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once the library is imported, you can use image-preview component in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<div *ngFor="let user of userArr">
+  <image-preview
+    [urlLittle]="user.picture.thumbnail"
+    [urlBig]="user.picture.large"
+    [alt]="user.picture.title">
+  </image-preview>
+</div>
 ```
 
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
+Mateus Durâes: https://github.com/mateusduraes
+Lucas Corrẽa: https://github.com/lucascco
 
 ## License
 
-MIT © [Lucas Correa](mailto:lucasccorrea@gmail.com)
+MIT © [Lucas Correa & Mateus Durães](mailto:lucasccorrea@gmail.com)
