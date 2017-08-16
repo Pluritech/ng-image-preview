@@ -1,5 +1,6 @@
 # ng-image-preview
 ![Demo ng-image-preview](./image-preview-peak.gif)
+
 Thanks by service used for tests on https://randomuser.me/
 
 ## Installation
