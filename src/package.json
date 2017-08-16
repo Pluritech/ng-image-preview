@@ -1,0 +1,28 @@
+{
+  "name": "@pluritech/ng-image-preview",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pluritech/repo"
+  },
+  "author": {
+    "name": "Lucas Correa",
+    "email": "lucasccorrea@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pluritech/repo/issues"
+  },
+  "main": "ng-image-preview.umd.js",
+  "module": "ng-image-preview.js",
+  "jsnext:main": "ng-image-preview.js",
+  "typings": "ng-image-preview.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
