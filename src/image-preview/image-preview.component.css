@@ -1,0 +1,6 @@
+.img-prev {
+    width: 100%;
+}
+.img-blur {
+  filter: blur(5px);
+}
