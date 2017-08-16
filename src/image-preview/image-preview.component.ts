@@ -7,13 +7,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImagePreviewComponent implements OnInit {
 
-  public isBlur: boolean;
 
   @Input() urlFallback = './images/fallbackImage.jpg';
   @Input() urlLittle: string;
   @Input() urlBig: string;
+  @Input() alt: string;
+
   public sourceImage: string
   public typeImage: string
+  public isBlur: boolean;
 
   constructor() {
     console.log('Hello ImageInstagramComponent Component');
