@@ -45,7 +45,7 @@ Once the library is imported, you can use image-preview component in your Angula
   <image-preview
     [urlLittle]="user.picture.thumbnail"
     [urlBig]="user.picture.large"
-    [alt]="user.picture.title">
+    [alt]="user.name.title">
   </image-preview>
 </div>
 ```
