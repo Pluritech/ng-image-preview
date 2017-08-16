@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pluritech/repo"
+    "url": "https://github.com/Pluritech/ng-image-preview"
   },
   "author": {
-    "name": "Lucas Correa",
+    "name": "Lucas Correa & Mateus Durães",
     "email": "lucasccorrea@gmail.com"
   },
   "keywords": [
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pluritech/repo/issues"
+    "url": "https://github.com/Pluritech/ng-image-preview/issues"
   },
   "main": "ng-image-preview.umd.js",
   "module": "ng-image-preview.js",

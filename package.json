@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pluritech/repo"
+    "url": "https://github.com/Pluritech/ng-image-preview"
   },
   "author": {
-    "name": "Lucas Correa && Mateus Durães",
+    "name": "Lucas Correa & Mateus Durães",
     "email": "lucasccorrea@gmail.com"
   },
   "keywords": [
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pluritech/repo/issues"
+    "url": "https://github.com/Pluritech/ng-image-preview/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
