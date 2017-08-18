@@ -10,8 +10,9 @@ export class ImagePreviewComponent implements OnInit {
   @Input() hqImage;
   @Input() lowImage;
   @Input() bgPlaceholder;
+  @Input() filterLowImage;
   @Input() paddingBottom;
-  
+
   @ViewChild('placeholder') placeholder: ElementRef;
   @ViewChild('qualityImage') qualityImage: ElementRef;
   constructor() {}
