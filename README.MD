@@ -6,7 +6,7 @@
 
 This library was creating to abstract the [LQIP – Low Quality Image Placeholders](http://www.guypo.com/introducing-lqip-low-quality-image-placeholders/) technique used by Medium and Instagram. The code was implemented inspired by this awesome [codepen](https://codepen.io/jmperez/pen/yYjPER) made by [@JMPerez](https://github.com/JMPerez).
 
-And we used [RandomUser API](https://randomuser.me) to make ower tests in development time.
+And we used [RandomUser API](https://randomuser.me) to make our tests in development time.
 
 ## How it works? (short explanation)
 
