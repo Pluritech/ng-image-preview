@@ -8,7 +8,12 @@ This library was creating to abstract the [LQIP – Low Quality Image Placeholde
 
 And we used [RandomUser API](https://randomuser.me) to make ower tests in development time.
 
-If you want to know more about the technique, just visit the links above!
+## How it works? (short explanation)
+
+First, we load the image with low quality and it is really fast. So, the people who have a slow internet can have a preview of what is coming.
+Second, we load the 'same image', but, with a high quality.
+
+It is a short explanation of how the technique works, if you want to know more, just visit the links above!
 
 ## Installation
 
