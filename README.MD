@@ -1,5 +1,8 @@
 # Angular Image preview
-![Demo ng-image-preview](./img-preview.gif)
+<p align="center">
+  ![Demo ng-image-preview](./img-preview.gif)
+</p>
+
 
 This library was creating to abstract the [LQIP – Low Quality Image Placeholders](http://www.guypo.com/introducing-lqip-low-quality-image-placeholders/) technique used by Medium and Instagram. The code was implemented inspired by this awesome [codepen](https://codepen.io/jmperez/pen/yYjPER) made by [@JMPerez](https://github.com/JMPerez).
 
