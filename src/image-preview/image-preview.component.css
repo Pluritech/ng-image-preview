@@ -14,7 +14,7 @@
   transition: opacity 1s linear;
 }
 .placeholder img.image-small {
-  filter: blur(50px);
+  filter: blur(20px);
   /* this is needed so Safari keeps sharp edges */
   transform: scale(1);
 }
