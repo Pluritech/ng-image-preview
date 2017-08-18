@@ -1,6 +1,6 @@
 # Angular Image preview
 <p align="center">
-  ![Demo ng-image-preview](./img-preview.gif)
+  <img src="./img-preview.gif">
 </p>
 
 
