@@ -72,6 +72,13 @@ Once the library is imported, you can use image-preview component in your Angula
 | filterLowImage | a filter value to image small like 'blur(10px)'. Default is 'blur(20px)'       |
 
 
+## To do
+* Manage images in cache
+* Implement a fallback image inputted by user
+* Implement the 'alt' attribute inputted by user
+
+Feel free to make your pull request.
+
 ## Authors
 
 Lucas Corrẽa: https://github.com/lucascco
