@@ -81,9 +81,9 @@ Feel free to make your pull request.
 
 ## Authors
 
-Lucas Corrẽa: https://github.com/lucascco
-Luis Moreno: https://github.com/luishmcmoreno
-Mateus Durâes: https://github.com/mateusduraes
+* Lucas Corrẽa: https://github.com/lucascco
+* Luis Moreno: https://github.com/luishmcmoreno
+* Mateus Durâes: https://github.com/mateusduraes
 
 ## License
 
