@@ -1,5 +1,5 @@
 <div class="placeholder" #placeholder [ngStyle]="{'background-color': bgPlaceholder}">
-  <img [src]="lowImage" class="image-small image-item" [ngStyle]="{'filter': filterLowImage}"/>
+  <img [src]="lowImage" [title]="title" [alt]="alt" class="image-small image-item" [ngStyle]="{'filter': filterLowImage}"/>
   <div class="padding-bottom" [ngStyle]="{'padding-bottom': paddingBottom}"></div>
-  <img [src]="hqImage" class="image-item" #qualityImage />
+  <img [src]="hqImage" [title]="title" [alt]="alt" class="image-item" #qualityImage />
 </div>

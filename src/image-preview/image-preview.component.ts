@@ -12,10 +12,21 @@ export class ImagePreviewComponent implements OnInit {
   @Input() bgPlaceholder;
   @Input() filterLowImage;
   @Input() paddingBottom;
+  @Input() title;
+  @Input() alt;
 
   @ViewChild('placeholder') placeholder: ElementRef;
   @ViewChild('qualityImage') qualityImage: ElementRef;
   constructor() {}
+
+  private loadMetaData(): void {
+    if (!this.alt && this.title) {
+      this.alt = this.title;
+    }
+    if (this.alt && !this.title) {
+      this.title = this.alt;
+    }
+  }
 
   private loadSmallImage(): void {
     const imgSmall = this.placeholder.nativeElement.querySelector('.image-small');
@@ -36,6 +47,7 @@ export class ImagePreviewComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loadMetaData();
     this.loadSmallImage();
     this.loadHqImage();
   }
