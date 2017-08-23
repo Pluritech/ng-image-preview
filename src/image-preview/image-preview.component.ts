@@ -1,11 +1,11 @@
-import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'image-preview',
   templateUrl: './image-preview.component.html',
   styleUrls: ['./image-preview.component.css']
 })
-export class ImagePreviewComponent implements OnInit {
+export class ImagePreviewComponent implements OnChanges {
 
   @Input() hqImage;
   @Input() lowImage;
@@ -17,6 +17,9 @@ export class ImagePreviewComponent implements OnInit {
 
   @ViewChild('placeholder') placeholder: ElementRef;
   @ViewChild('qualityImage') qualityImage: ElementRef;
+
+  private classLoaded = 'loaded';
+
   constructor() {}
 
   private loadMetaData(): void {
@@ -29,7 +32,7 @@ export class ImagePreviewComponent implements OnInit {
   }
 
   private loadSmallImage(): void {
-    const imgSmall = this.placeholder.nativeElement.querySelector('.image-small');
+    const imgSmall = this.getSmallImageElement();
     imgSmall.src = this.lowImage;
     imgSmall.onload = () => {
       imgSmall.classList.add('loaded');
@@ -42,11 +45,22 @@ export class ImagePreviewComponent implements OnInit {
     imgLarge.classList.add('image-item');
 
     imgLarge.onload = () => {
-      this.qualityImage.nativeElement.classList.add('loaded');
+      this.qualityImage.nativeElement.classList.add(this.classLoaded);
     };
   }
 
-  ngOnInit() {
+
+  private getSmallImageElement(): HTMLImageElement {
+    return this.placeholder.nativeElement.querySelector('.image-small');
+  }
+
+  private resetPreview() {
+    this.getSmallImageElement().classList.remove(this.classLoaded);
+    this.qualityImage.nativeElement.classList.remove(this.classLoaded);
+  }
+
+  ngOnChanges() {
+    this.resetPreview();
     this.loadMetaData();
     this.loadSmallImage();
     this.loadHqImage();
