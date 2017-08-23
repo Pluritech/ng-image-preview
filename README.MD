@@ -70,6 +70,8 @@ Once the library is imported, you can use image-preview component in your Angula
 | paddingBottom | a padding-bottom value, to prevent the reflow, default is 66.6%       |
 | bgPlaceholder | a background-color value to fill the placeholder 'container'      |
 | filterLowImage | a filter value to image small like 'blur(10px)'. Default is 'blur(20px)'       |
+| alt | a value 'alt' to both, low image and high image       |
+| title | a value 'title' to both, low image and high image       |
 
 
 ## To do
@@ -77,6 +79,9 @@ Once the library is imported, you can use image-preview component in your Angula
 * Implement a fallback image inputted by user
 
 Feel free to make your pull request.
+
+## Fix Issues
+* 1.1.1 - Now you can use the operator Elvis to load data async, without the needed of use the *ngIf
 
 ## Authors
 
