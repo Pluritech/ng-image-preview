@@ -12,8 +12,8 @@ export class ImagePreviewComponent implements OnInit {
   @Input() bgPlaceholder;
   @Input() filterLowImage;
   @Input() paddingBottom;
-  @Input() title;
-  @Input() alt;
+  @Input() title = '';
+  @Input() alt = '';
 
   @ViewChild('placeholder') placeholder: ElementRef;
   @ViewChild('qualityImage') qualityImage: ElementRef;
@@ -40,7 +40,7 @@ export class ImagePreviewComponent implements OnInit {
     const imgLarge = new Image();
     imgLarge.src = this.hqImage;
     imgLarge.classList.add('image-item');
-    
+
     imgLarge.onload = () => {
       this.qualityImage.nativeElement.classList.add('loaded');
     };
