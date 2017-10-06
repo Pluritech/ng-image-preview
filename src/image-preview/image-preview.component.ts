@@ -12,6 +12,7 @@ export class ImagePreviewComponent implements OnChanges {
   @Input() bgPlaceholder;
   @Input() filterLowImage;
   @Input() paddingBottom;
+  @Input() fallbackSrc;
   @Input() title = '';
   @Input() alt = '';
 
@@ -46,6 +47,13 @@ export class ImagePreviewComponent implements OnChanges {
 
     imgLarge.onload = () => {
       this.qualityImage.nativeElement.classList.add(this.classLoaded);
+    };
+
+    imgLarge.onerror = () => {
+      if (this.fallbackSrc) {
+        this.qualityImage.nativeElement['src'] = this.fallbackSrc;
+        this.qualityImage.nativeElement.classList.add(this.classLoaded);
+      }
     };
   }
 

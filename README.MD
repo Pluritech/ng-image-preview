@@ -57,6 +57,7 @@ Once the library is imported, you can use image-preview component in your Angula
    [lowImage]="picture.thumbnail"
    [hqImage]="picture.large"
    paddingBottom="95%"
+   fallbackSrc="./assets/no-image-box.png"
    filterLowImage="blur(10px)">
   </image-preview>
 </div>
@@ -68,6 +69,7 @@ Once the library is imported, you can use image-preview component in your Angula
 | lowImage     | low image url |
 | hqImage     |  high quality image url |
 | paddingBottom | a padding-bottom value, to prevent the reflow, default is 66.6%       |
+| fallbackSrc | a path to fallback image the will replace the hqImage if occur an error on load      |
 | bgPlaceholder | a background-color value to fill the placeholder 'container'      |
 | filterLowImage | a filter value to image small like 'blur(10px)'. Default is 'blur(20px)'       |
 | alt | a value 'alt' to both, low image and high image       |
