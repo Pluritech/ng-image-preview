@@ -78,7 +78,6 @@ Once the library is imported, you can use image-preview component in your Angula
 
 ## To do
 * Manage images in cache
-* Implement a fallback image inputted by user
 
 Feel free to make your pull request.
 
